@@ -25,19 +25,19 @@ type Story = StoryObj<typeof meta>;
 // TS2322: Type {} is not assignable to type never
 
 export const BasicSelect: Story = {
-    args: {},
+    args: {} as never,
 };
 
 export const SelectWithArrowIcon: Story = {
     args: {
         showArrowIcon: true,
-    },
+    } as never,
 };
 
 export const SelectWithDefaultValue: Story = {
     args: {
         defaultValue: 'Select your favorite fruit',
-    },
+    } as never,
 };
 
 export const SelectWithError: Story = {
@@ -45,7 +45,7 @@ export const SelectWithError: Story = {
         value: {},
         isError: true,
         validationInformation: 'Please select a country',
-    },
+    } as never,
 };
 
 export const MultiSelect: Story = {
@@ -55,5 +55,5 @@ export const MultiSelect: Story = {
             { label: 'Pink', value: 'pink' },
         ],
         multiple: true,
-    },
+    } as never,
 };
