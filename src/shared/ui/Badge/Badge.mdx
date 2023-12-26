@@ -1,0 +1,65 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import * as BadgeStories from './Badge.stories';
+import { Badge } from '@/shared/ui/Badge';
+
+<Meta
+    title="MDX/Badge"
+    of={BadgeStories}
+/>
+
+# Badge
+
+#### The Badge component is a UI element designed to display textual information with customizable styles and optional icons. It can be used in various contexts to convey details or trigger specific actions.
+
+---
+
+## Base Badge
+
+<Canvas withToolbar>
+    <Story of={BadgeStories.Base} />
+</Canvas>
+
+## Notification Badge
+
+<Canvas withToolbar>
+    <Story of={BadgeStories.Notification} />
+</Canvas>
+
+## Delete Badge
+
+<Canvas withToolbar>
+    <Story of={BadgeStories.Delete} />
+</Canvas>
+
+## Badge Variants
+
+<Canvas withToolbar>
+    <Story of={BadgeStories.GrayBadge} />
+    <Story of={BadgeStories.RedBadge} />
+    <Story of={BadgeStories.YellowBadge} />
+    <Story of={BadgeStories.BlueBadge} />
+    <Story of={BadgeStories.GreenBadge} />
+    <Story of={BadgeStories.PurpleBadge} />
+    <Story of={BadgeStories.PinkBadge} />
+    <Story of={BadgeStories.OrangeBadge} />
+    <Story of={BadgeStories.BlackBadge} />
+</Canvas>
+
+## Badge Sizes
+
+<Canvas withToolbar>
+    <Story of={BadgeStories.BadgeSizeXs} />
+    <Story of={BadgeStories.BadgeSizeMd} />
+    <Story of={BadgeStories.BadgeSizeLg} />
+</Canvas>
+
+## Badge Rounded
+
+<Canvas withToolbar>
+    <Story of={BadgeStories.BadgeRoundedMd} />
+    <Story of={BadgeStories.BadgeRoundedXl} />
+</Canvas>
+
+## Args
+
+<ArgsTable of={Badge} />

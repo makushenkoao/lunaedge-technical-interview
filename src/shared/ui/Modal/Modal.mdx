@@ -1,0 +1,24 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import * as ModalStories from './Modal.stories';
+import { Modal } from '@/shared/ui/Modal';
+
+<Meta
+    title="MDX/Modal"
+    of={ModalStories}
+/>
+
+# Modal
+
+#### The Modal component creates a customizable and accessible modal dialog for displaying content.
+
+---
+
+## Modal
+
+<Canvas withToolbar>
+    <Story of={ModalStories.Primary} />
+</Canvas>
+
+## Args
+
+<ArgsTable of={Modal} />

@@ -1,0 +1,48 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import * as SelectStories from './Select.stories';
+import { Select } from '@/shared/ui/Select';
+
+<Meta
+    title="MDX/Select"
+    of={SelectStories}
+/>
+
+# Select
+
+#### The Select component provides a versatile dropdown selection with multiple options and advanced features.
+
+---
+
+## Basic Select
+
+<Canvas>
+    <Story of={SelectStories.BasicSelect} />
+</Canvas>
+
+## Select with Arrow Icon
+
+<Canvas withToolbar>
+    <Story of={SelectStories.SelectWithArrowIcon} />
+</Canvas>
+
+## Select with Default Value
+
+<Canvas withToolbar>
+    <Story of={SelectStories.SelectWithDefaultValue} />
+</Canvas>
+
+## Select with Error
+
+<Canvas withToolbar>
+    <Story of={SelectStories.SelectWithError} />
+</Canvas>
+
+## Multi-Select
+
+<Canvas withToolbar>
+    <Story of={SelectStories.MultiSelect} />
+</Canvas>
+
+## Args
+
+<ArgsTable of={Select} />

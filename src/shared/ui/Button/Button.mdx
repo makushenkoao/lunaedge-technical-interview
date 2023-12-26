@@ -1,0 +1,82 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+import { Button } from '@/shared/ui/Button';
+
+<Meta
+    title="MDX/Button"
+    of={ButtonStories}
+/>
+
+# Button
+
+#### Button components are used to trigger actions or events when clicked.
+
+---
+
+## Primary Button
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.Primary} />
+</Canvas>
+
+## Outlined Button
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.Outline} />
+</Canvas>
+
+## Text Button
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.Text} />
+</Canvas>
+
+## Button with start and end icons
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.PrimaryWithIcons} />
+    <Story of={ButtonStories.OutlineWithIcons} />
+    <Story of={ButtonStories.TextWithIcons} />
+</Canvas>
+
+## Disabled button
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.PrimaryDisabled} />
+    <Story of={ButtonStories.OutlineDisabled} />
+    <Story of={ButtonStories.TextDisabled} />
+</Canvas>
+
+## Button sizes
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.PrimaryXS} />
+    <Story of={ButtonStories.PrimarySM} />
+    <Story of={ButtonStories.PrimaryBase} />
+    <Story of={ButtonStories.PrimaryLG} />
+    <Story of={ButtonStories.PrimaryXL} />
+</Canvas>
+
+---
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.OutlineXS} />
+    <Story of={ButtonStories.OutlineSM} />
+    <Story of={ButtonStories.OutlineBase} />
+    <Story of={ButtonStories.OutlineLG} />
+    <Story of={ButtonStories.OutlineXL} />
+</Canvas>
+
+---
+
+<Canvas withToolbar>
+    <Story of={ButtonStories.TextXS} />
+    <Story of={ButtonStories.TextSM} />
+    <Story of={ButtonStories.TextBase} />
+    <Story of={ButtonStories.TextLG} />
+    <Story of={ButtonStories.TextXL} />
+</Canvas>
+
+## Args
+
+<ArgsTable of={Button} />

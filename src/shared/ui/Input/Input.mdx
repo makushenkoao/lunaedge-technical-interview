@@ -1,0 +1,40 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import { Input } from '@/shared/ui/Input/Input';
+import * as InputStories from './Input.stories';
+
+<Meta
+    title="MDX/Input"
+    of={InputStories}
+/>
+
+# Input
+
+#### The Input component is a versatile form input element with extended functionality and customizable styles.
+
+---
+
+<Canvas withToolbar>
+    <Story of={InputStories.BaseInput} />
+</Canvas>
+
+## Input with Icon
+
+<Canvas withToolbar>
+    <Story of={InputStories.InputWithIcon} />
+</Canvas>
+
+## Input with Password Toggle
+
+<Canvas withToolbar>
+    <Story of={InputStories.InputWithPasswordToggle} />
+</Canvas>
+
+## Input with Error
+
+<Canvas withToolbar>
+    <Story of={InputStories.InputWithError} />
+</Canvas>
+
+## Args
+
+<ArgsTable of={Input} />
