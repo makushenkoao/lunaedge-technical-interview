@@ -124,7 +124,7 @@ export const Badge = (props: BadgeProps) => {
     const variantStyles = getVariantStyles(variant);
 
     const handleBadgeClick = (e: React.MouseEvent) => {
-        e.stopPropagation(); // Stop the propagation of the click event
+        e.stopPropagation();
     };
 
     return (

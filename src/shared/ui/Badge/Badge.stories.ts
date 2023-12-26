@@ -85,10 +85,6 @@ export const BlackBadge: Story = {
     },
 };
 
-// type BadgeRounded = 'md' | 'xl';
-//
-// type BadgeSize = 'xs' | 'md' | 'lg';
-
 export const BadgeRoundedMd: Story = {
     args: {
         rounded: 'md',
